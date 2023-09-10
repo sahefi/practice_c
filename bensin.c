@@ -9,8 +9,7 @@ int main() {
     char modeMenyupir[10];
     
     //Tampilan awal
-    printf("\nPenghitung Efisiensi Bahan Bakar");
-    printf("\n-------------------------------------------------------\n\n");
+    printf("\n-----------------Penghitung Efisiensi Bahan Bakar-----------------\n");
     printf("Pilih jenis Bahan Bakar  (Pertamax/Pertalite): ");
     scanf("%s", tipeBensin);
 
