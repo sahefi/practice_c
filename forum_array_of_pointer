@@ -1,0 +1,41 @@
+1.
+
+struct Mahasiswa {
+int id;
+char nama[50];
+char prodi[50];
+float gpa;
+};
+
+2.
+
+#include <stdio.h>
+
+// Mendefinisikan (struct) untuk menyimpan data mahasiswa
+struct Mahasiswa {
+int id;
+char nama[50];
+char prodi[50];
+float gpa;
+};
+
+int main() {
+struct Mahasiswa mahasiswa;
+
+printf("Masukkan ID: ");
+scanf("%d", &mahasiswa.id);
+printf("Masukkan Nama: ");
+scanf(" %[^\n]", mahasiswa.nama);
+printf("Masukkan Prodi: ");
+scanf(" %[^\n]", mahasiswa.prodi);
+printf("Masukkan GPA: ");
+scanf("%f", &mahasiswa.gpa);
+
+printf("\nData Mahasiswa : \n");
+printf("ID: %d\n", mahasiswa.id);
+printf("Nama: %s\n", mahasiswa.nama);
+printf("Prodi: %s\n", mahasiswa.prodi);
+printf("GPA: %.2f\n", mahasiswa.gpa);
+
+return 0;
+}
